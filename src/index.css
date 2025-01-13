@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--size-large: 32px;
+	--size-medium: 24px;
+	--size-small: 20px;
+}
+
+@layer components {
+	/* Add your component styles here */
+}
+
+@layer utilities {
+	/* Add your utility styles here */
+}
+
+.scrolling-touch {
+	-webkit-overflow-scrolling: touch;
+}
+.scrolling-auto {
+	-webkit-overflow-scrolling: auto;
+}
+
+/* Classes to remove number spinners from inputs of type number */
+/* Chrome, Safari, Edge, Opera */
+.remove-number-spinner::-webkit-outer-spin-button,
+.remove-number-spinner::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+.remove-number-spinner {
+	-moz-appearance: textfield;
+}
